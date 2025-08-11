@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etania Feedback QR Code</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for a clean look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        /* Applying the custom fonts */
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        .font-roboto { font-family: 'Roboto', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-200 flex items-center justify-center min-h-screen p-4">
+
+    <!-- This is the main card container -->
+    <div class="bg-white rounded-2xl shadow-lg p-8 max-w-xs w-full text-center">
+        
+        <!-- The main title -->
+        <h1 class="font-poppins text-2xl font-bold text-gray-800">
+            Share Your Feedback!
+        </h1>
+        
+        <!-- Subtitle with instructions -->
+        <p class="font-roboto text-gray-500 mt-2 mb-6">
+            Scan the code with your phone's camera.
+        </p>
+
+        <!-- The QR Code Image -->
+        <!-- This now looks for 'qrcode.png' in the same folder -->
+        <div class="p-4 bg-white border-4 border-gray-100 rounded-lg inline-block">
+             <img src="qrcode.png" alt="Feedback QR Code" class="w-48 h-48">
+        </div>
+
+        <!-- Etania Food Court Logo and Name -->
+        <!-- This now looks for 'logo.png' in the same folder -->
+        <div class="mt-6 flex items-center justify-center space-x-3">
+            <img src="logo.png" alt="Etania Logo" class="w-8 h-8">
+            <span class="font-poppins font-semibold text-gray-700">Etania Food Court</span>
+        </div>
+
+    </div>
+
+</body>
+</html>
